@@ -15,7 +15,7 @@ FTRAINNUM = ABS+'train_numeric.csv'
 
 FTRAINDATE = ABS+'train_date.csv'
 
-# On ne garde que les 50 000 premiers cas
+# On ne garde que les 2 000 premiers cas
 data = pd.read_csv(FTRAINNUM, nrows=2000)
 
 plt.hist(data.isnull().sum(axis=1),bins=40)
