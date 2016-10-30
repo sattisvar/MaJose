@@ -6,12 +6,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-FTESTCAT = 'G:/Olivier/Kaggle/Bosch/test_categorical.csv'
-FTESTNUM = 'G:/Olivier/Kaggle/Bosch/test_numeric.csv'
+ABS = 'G:/Olivier/Kaggle/Bosch/'
 
-FTRAINNUM = 'G:/Olivier/Kaggle/Bosch/train_numeric.csv'
+FTESTCAT = ABS+'test_categorical.csv'
+FTESTNUM = ABS+'test_numeric.csv'
 
-FTRAINDATE = 'G:/Olivier/Kaggle/Bosch/train_date.csv'
+FTRAINNUM = ABS+'train_numeric.csv'
+
+FTRAINDATE = ABS+'train_date.csv'
 
 # On ne garde que les 50 000 premiers cas
 data = pd.read_csv(FTRAINNUM, nrows=2000)
